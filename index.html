@@ -9,86 +9,140 @@
         <title>Cowork</title>
     </head>
     <body>
-        <nav>
-            <div class="logo">Cowork</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#blog">Blog</a>
-                <a href="#contact">Contact</a>
-                <a href="#login" class="nav-button secondary">Login</a>
-                <a href="#signup" class="nav-button primary">Sign Up</a>
-            </div>
-        </nav>
+        <header>
+            <svg
+                class="logo"
+                width="119"
+                height="24"
+                viewBox="0 0 119 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M11.5508 24C5.06952 24 0 18.738 0 11.9679C0 5.22995 5.06952 0 11.5508 0C17.615 0 22.3636 4.04278 23.1658 9.94652H18C17.4545 6.64171 14.8877 4.36364 11.615 4.36364C7.66845 4.36364 5.00535 7.47594 5.00535 11.9679C5.00535 16.492 7.66845 19.6364 11.615 19.6364C14.8877 19.6364 17.4225 17.3262 18 14.0214H23.1658C22.3636 19.9893 17.615 24 11.5508 24Z"
+                    fill="black"></path>
+                <path
+                    d="M33.7583 6.06417C25.0631 6.06417 25.0631 9.97861 25.0631 14.9519C25.0631 19.9572 28.785 23.8396 33.7583 23.8396C38.7315 23.8396 42.4535 19.9572 42.4535 14.9519C42.4535 9.97861 42.4535 6.06417 33.7583 6.06417ZM33.7583 10.0107C37.8652 10.0107 37.8652 11.7754 37.8652 14.9519C37.8652 18.1283 35.9722 19.861 33.7583 19.861C31.5444 19.861 29.6513 18.1283 29.6513 14.9519C29.6513 11.7754 29.6513 10.0107 33.7583 10.0107Z"
+                    fill="black"></path>
+                <path
+                    d="M58.9143 23.5187L55.6737 12.385L52.4652 23.5187H48.0053L43.1283 6.38503H47.4598L50.3796 17.2299L53.524 6.38503H57.9197L60.9678 17.2299L63.8555 6.38503H68.2513L63.3422 23.5187H58.9143Z"
+                    fill="black"></path>
+                <path
+                    d="M77.6252 23.8396C72.652 23.8396 68.9301 19.9251 68.9301 14.9519C68.9301 9.94652 68.9301 6.06417 77.6252 6.06417C86.3204 6.06417 86.3204 9.94652 86.3204 14.9519C86.3204 19.9251 82.5985 23.8396 77.6252 23.8396ZM77.6252 19.893C79.8391 19.893 81.7322 18.1283 81.7322 14.9519C81.7322 11.7754 81.7322 10.0428 77.6252 10.0428C73.5183 10.0428 73.5183 11.7754 73.5183 14.9519C73.5183 18.1283 75.4113 19.893 77.6252 19.893Z"
+                    fill="black"></path>
+                <path
+                    d="M93.6264 15.2086V23.5187H89.1665V6.38503H93.2735V9.68984C94.5248 7.50802 97.1879 6.19251 99.9473 6.19251V10.8128C96.1612 10.5241 93.6264 11.4225 93.6264 15.2086Z"
+                    fill="black"></path>
+                <path
+                    d="M106.724 23.5187H102.264V0.481283H106.724V13.6364L112.981 6.38503H118.114L111.023 14.5989L118.948 23.5187H113.269L106.724 15.5615V23.5187Z"
+                    fill="black"></path>
+            </svg>
+            <nav>
+                <a href="https://example.com/about" class="link">About</a>
+                <a href="https://example.com/pricing" class="link">Pricing</a>
+                <a href="https://example.com/blog" class="link">Blog</a>
+                <a href="https://example.com/contact" class="link">Contact</a>
+                <a href="https://example.com/login" class="btn btn-secondary"
+                    >Login</a
+                >
+                <a href="https://example.com/signup" class="btn btn-primary"
+                    >Sign Up</a
+                >
+            </nav>
+        </header>
 
         <main>
-            <div class="hero-section">
-                <h1
-                    class="hero-title"
-                    style="
-                        font-size: 84px;
-                        letter-spacing: -2px;
-                        color: white;
-                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-                    ">
+            <section class="hero">
+                <h1 class="hero__title">
                     ABOUT OUR<br />
                     COWORKING<br />
                     SPACE
-                    <svg class="star-icon" viewBox="0 0 24 24">
-                        <polygon
-                            points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
-                            stroke-linejoin="round"></polygon>
-                    </svg>
+                    <span class="hero__icon">
+                        <svg
+                            viewBox="0 0 65 65"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_582_94)">
+                                <path
+                                    d="M41.0654 32.4765L50.0104 37.859C50.2393 38.0002 50.5049 38.0706 50.7737 38.0615C51.0425 38.0523 51.3026 37.9639 51.5213 37.8074C51.7401 37.6508 51.9077 37.4332 52.0032 37.1818C52.0986 36.9303 52.1177 36.6563 52.0579 36.394L49.6254 26.3465L57.5854 19.6265C57.79 19.4541 57.9385 19.2246 58.012 18.9674C58.0854 18.7102 58.0805 18.4369 57.9979 18.1824C57.9152 17.928 57.7585 17.704 57.5479 17.5391C57.3373 17.3741 57.0823 17.2758 56.8154 17.2565L46.3679 16.429L42.3429 6.89402C42.2364 6.64689 42.0599 6.43638 41.835 6.28848C41.6102 6.14057 41.347 6.06175 41.0779 6.06175C40.8088 6.06175 40.5456 6.14057 40.3208 6.28848C40.096 6.43638 39.9194 6.64689 39.8129 6.89402L35.7879 16.429L25.3404 17.2565C25.0726 17.2735 24.8159 17.3703 24.6035 17.5343C24.3911 17.6984 24.2326 17.9223 24.1484 18.1771C24.0643 18.432 24.0583 18.7062 24.1313 18.9645C24.2043 19.2228 24.3528 19.4534 24.5579 19.6265L32.5179 26.3465L30.0654 36.394C30.0057 36.6563 30.0247 36.9303 30.1202 37.1818C30.2157 37.4332 30.3833 37.6508 30.602 37.8074C30.8208 37.9639 31.0809 38.0523 31.3497 38.0615C31.6185 38.0706 31.884 38.0002 32.1129 37.859L41.0654 32.4765Z"
+                                    stroke="white"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M20.6779 29.449L6.06543 44.0615"
+                                    stroke="white"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M23.3804 44.7465L10.0654 58.0615"
+                                    stroke="white"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M41.6354 44.4915L28.0654 58.0615"
+                                    stroke="white"
+                                    stroke-width="3"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_582_94">
+                                    <rect
+                                        width="64"
+                                        height="64"
+                                        fill="white"
+                                        transform="translate(0.0654297 0.0615234)"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
                 </h1>
-                <p class="hero-description">
+                <p class="hero__desc">
                     We're on a mission to reshape<br />how people work and
                     create by<br />providing elevated coworking experiences.
                 </p>
-            </div>
+            </section>
 
-            <div class="cards-container">
-                <div class="card" data-number="1">
+            <div class="cards">
+                <div class="card card__content__light">
                     <img
+                        class="card__content__img"
                         src="./src/assets/photo1.webp"
-                        alt="Coworking Space Interior" />
-                    <div class="card-content">
-                        <h3>Our Space</h3>
-                        <p>
-                            Explore our modern and comfortable working
-                            environments designed for productivity and
-                            creativity.
+                        alt="Modern Office Lounge" />
+                    <div class="card__content">
+                        <h3 class="card__content__title">Modern Lounge</h3>
+                        <p class="card__content__text">
+                            Experience our sophisticated lounge area designed
+                            for comfort and collaboration.
                         </p>
-                        <span class="expand-text">Tap to expand</span>
+                        <button class="card__content__btn">Tap to expand</button>
+                        <span class="card__content__num">1</span>
                     </div>
                 </div>
 
-                <div class="card" data-number="2">
+                <div class="card card__content__primary">
                     <img
+                        class="card__content__img"
                         src="./src/assets/photo2;3.webp"
-                        alt="Modern Working Space" />
-                    <div class="card-content">
-                        <h3>Our Space</h3>
-                        <p>
-                            Explore our modern and comfortable working
-                            environments designed for productivity and
-                            creativity.
-                        </p>
-                        <span class="expand-text">Tap to expand</span>
+                        alt="Collaborative Workspace" />
+                    <div class="card__content">
+                        <h3 class="card__content__title">Work Area</h3>
+                        <button class="card__content__btn">Tap to expand</button>
+                        <span class="card__content__num">2</span>
                     </div>
                 </div>
 
-                <div class="card" data-number="3">
+                <div class="card card__content__light">
                     <img
+                        class="card__content__img"
                         src="./src/assets/photo2;3.webp"
-                        alt="Community Space" />
-                    <div class="card-content">
-                        <h3>Our Space</h3>
-                        <p>
-                            Explore our modern and comfortable working
-                            environments designed for productivity and
-                            creativity.
-                        </p>
-                        <span class="expand-text">Tap to expand</span>
+                        alt="Collaborative Space" />
+                    <div class="card__content">
+                        <h3 class="card__content__title">Community Hub</h3>
+                        <button class="card__content__btn">Tap to expand</button>
+                        <span class="card__content__num">3</span>
                     </div>
                 </div>
             </div>
